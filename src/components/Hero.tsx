@@ -21,7 +21,7 @@ const Hero = () => {
           className="h-[40rem] 2xl:h-[55rem] 3xl:h-[60rem] -translate-x-8 w-auto mx-auto"
         />
         <div className="glass text-white absolute top-[27%] right-[55%] px-6 py-5 rounded-2xl flex-col items-start">
-          <div className="text-base pl-1">I'm</div>
+          <div className="text-base pl-1">I&apos;m</div>
           <div className="text-3xl font-semibold">Subrahmanyam</div>
         </div>
         <div className="glass text-white absolute top-[44%] right-[18%] px-5 py-4 rounded-2xl flex-col items-start">
