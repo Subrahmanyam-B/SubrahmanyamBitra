@@ -1,8 +1,6 @@
 import React from "react";
 
-type Props = {};
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
   const [active, setActive] = React.useState(`translate-x-[0%]`);
 
   const handleClick = (index: number) => {
@@ -16,34 +14,34 @@ const Navbar = (props: Props) => {
   return (
     <div className="glass p-2  border-b-[#ffffff99] relative border-b-[1px] border-t-[#ffffff40] border-l-0">
       <div
-        className={`bg-[#ffffff30] absolute w-32 h-8 rounded-full left-2 ${active} transition-all duration-200 ease-in-out`}
+        className={`bg-[#ffffff30] absolute w-20 md:w-32 h-8 rounded-full left-2 ${active} transition-all duration-200 ease-in-out`}
       ></div>
       <button
-        className={`text-white font-bold rounded-full px-10 w-32 flex py-1 justify-center `}
+        className={`text-white font-bold rounded-full px-10 w-16 sm:w-20 md:w-32 flex py-1 justify-center `}
         onClick={() => handleClick(1)}
       >
         Home
       </button>
       <button
-        className={`text-white font-bold rounded-full px-10 w-32 flex py-1 justify-center `}
+        className={`text-white font-bold rounded-full px-10 w-16 sm:w-20 md:w-32 flex py-1 justify-center `}
         onClick={() => handleClick(2)}
       >
         About
       </button>
       <button
-        className={`text-white font-bold rounded-full px-10 w-32 flex py-1 justify-center `}
+        className={`text-white font-bold rounded-full px-10 w-16 sm:w-20 md:w-32 flex py-1 justify-center `}
         onClick={() => handleClick(3)}
       >
         Projects
       </button>
       <button
-        className={`text-white font-bold rounded-full px-10 w-32 flex py-1 justify-center `}
+        className={`text-white font-bold rounded-full px-10  w-16 sm:w-20 md:w-32 flex py-1 justify-center `}
         onClick={() => handleClick(4)}
       >
         Skills
       </button>
       <button
-        className={`text-white font-bold rounded-full px-10 w-32 flex py-1 justify-center `}
+        className={`text-white font-bold rounded-full px-10 w-16 sm:w-20 md:w-32 flex py-1 justify-center `}
         onClick={() => handleClick(5)}
       >
         Contact

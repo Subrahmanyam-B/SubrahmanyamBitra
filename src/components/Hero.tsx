@@ -1,14 +1,16 @@
 import React from "react";
 import Image from "next/image";
 
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
     <div className="bg-[#dad7cd] min-h-screen p-5">
-      <div className="flex justify-between px-10 pt-5 items-center relative z-10">
-        <button className="w-20 h-20 glass hover:bg-white rounded-full flex justify-center items-center shadow-lg cursor-pointer">
+      <div className="flex justify-between px-5 pt-2 md:px-10 md:pt-5 items-center relative z-10">
+        <button className="w-14 h-14 md:w-20 md:h-20 glass hover:bg-white rounded-full flex justify-center items-center shadow-lg cursor-pointer">
           <Image src="/assets/logo.svg" width={100} height={100} alt="logo" />
         </button>
-        <div className="glass py-6 px-8 max-h-10 rounded-xl text-white text-xl font-semibold ">
+        <div
+          className={`glass py-4 px-6 md:py-6 md:px-8 max-h-10 rounded-xl text-white text-md md:text-xl font-semibold `}
+        >
           Contact Me
         </div>
       </div>

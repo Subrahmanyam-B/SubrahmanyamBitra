@@ -1,12 +1,11 @@
 import React from "react";
 
-type Props = {};
-
-const About = (props: Props) => {
+const About: React.FC = () => {
   return (
-    <div className="text-3xl font-bold flex justify-center h-screen items-center">
-      Coming Soon...
-    </div>
+    <section className="flex flex-col bg-white py-20 text-3xl md:text-4xl ">
+      <div className="container mx-auto px-11"></div>
+      About
+    </section>
   );
 };
 
