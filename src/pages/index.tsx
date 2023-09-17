@@ -9,7 +9,7 @@ export default function Home() {
     <main className={`${manrope.className}`}>
       <Hero />
       <About />
-      <div className="sticky bottom-16 flex justify-center">
+      <div className="sticky bottom-8 md:bottom-16 flex justify-center">
         <Navbar />
       </div>
     </main>
