@@ -106,8 +106,8 @@ const Gallery = () => {
       <div className={styles.gallery}>
         <div className={styles.left}>
           <div className={styles.desktopContent}>
-            {projects.map((project) => (
-              <div className={styles.desktopContentSection}>
+            {projects.map((project, index) => (
+              <div key={index} className={styles.desktopContentSection}>
                 <p></p>
                 <h1>{project.title}</h1>
                 <p>{project.description}</p>
@@ -122,8 +122,8 @@ const Gallery = () => {
             <h1>Red</h1>
             <p>
               Red is a color often associated with strong emotions such as
-              passion, love, and anger. It's a bold and attention-grabbing color
-              that can evoke feelings of excitement, warmth, and energy.
+              passion, love, and anger. It&apos;s a bold and attention-grabbing
+              color that can evoke feelings of excitement, warmth, and energy.
             </p>
 
             <div className={`${styles.mobilePhoto} ${styles.green}`}></div>
@@ -161,8 +161,9 @@ const Gallery = () => {
           </div>
 
           <div className={styles.desktopPhotos}>
-            {projects.map((project) => (
+            {projects.map((project, index) => (
               <div
+                key={index}
                 className={`${styles.desktopPhoto}`}
                 style={{ backgroundColor: project.color }}
               >

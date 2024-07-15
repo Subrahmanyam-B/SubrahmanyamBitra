@@ -19,7 +19,7 @@ export default function index() {
     <motion.div style={{ y }} ref={container} className={styles.contact}>
       <div className={styles.body}>
         <div className={styles.title}>
-          <h2>Let's work</h2>
+          <h2>Let&apos;s work</h2>
           <h2>together</h2>
           <motion.div style={{ x }} className={styles.buttonContainer}>
             <Rounded backgroundColor={"#334BD3"} className={styles.button}>
