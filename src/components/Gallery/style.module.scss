@@ -97,6 +97,24 @@
     z-index: 1;
   }
 }
+.button2 {
+  top: 0%;
+  // left: calc(100% - 200px);
+  background-color: #1c1d20;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    margin: 5px 15px;
+    font-size: 16px;
+    font-weight: 300;
+    position: relative;
+    z-index: 1;
+  }
+}
 
 .red {
   background: #21242b;
